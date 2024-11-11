@@ -1,4 +1,5 @@
 const state = {
+  bgm: document.getElementById("bgm"),
   score: {
     playerScore: 0,
     computerScore: 0,
@@ -201,6 +202,8 @@ function init() {
 
   drawCards(5, state.playerSides.player);
   drawCards(5, state.playerSides.computer);
+
+  state.bgm.play();
 }
 
 init();
